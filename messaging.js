@@ -4,6 +4,7 @@ const database = firebase.database();
 
 
 sendButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log(database.ref('/').json());
+  sendButton.innerText = "Hello World";
+  //e.preventDefault();
+  //console.log(database.ref('/').json());
 })
