@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="publishers"></div>
+    <div id="subscribers"></div>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+    <script>
+        fetch('/token').then(res => res.json()).then(({apiKey, sessionId, token}) => {
+          const session = OT.initSession(apiKey, sessionId)
+          const publisher = OT.initPublisher('publishers')
+          session.connect(token, () => {
+            session.publish(publisher)
+          })
+          session.on('streamCreated', event => {
+            session.subscribe(event.stream, 'subscribers')
+          })
+        })
+      </script>
+</body>
+</html>
