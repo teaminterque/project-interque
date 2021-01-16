@@ -13,9 +13,9 @@ app.use(express.static("public"));
 //   response.sendFile(__dirname + "/views/landing.html");
 // });
 
-app.get('/', (req, res) => {
-    res.sendFile('views/landing.html', {root: __dirname })
-})
+app.get('/', function(req, res){
+    res.sendfile('landing.html', { root: __dirname + "/views" } );
+});
 
 
 app.get("/session/:room", (request, response) => {
