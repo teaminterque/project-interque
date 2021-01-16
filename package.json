@@ -1,0 +1,23 @@
+{
+  "name": "interque",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teaminterque/project-interque.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teaminterque/project-interque/issues"
+  },
+  "homepage": "https://github.com/teaminterque/project-interque#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "opentok": "^2.10.0"
+  }
+}
