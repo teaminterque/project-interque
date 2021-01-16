@@ -1,5 +1,5 @@
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,79 +22,86 @@ ul {
     max-width: 960px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    text-transform: uppercase;
+    justify-content: start;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
 }
 
-.pricing-plan {
-    border-bottom: 1px solid #206eb3;
+.box {
+    /* border-bottom: 1px solid #206eb3; */
     /* border-bottom: 1px solid #e1f1ff; */
+    max-width: 480px;
     padding: 8px 16px;
 }
 
-.pricing-plan:last-child {
+.box:last-child {
     border-bottom: none;
 }
 
-.pricing-img {
-    margin-bottom: 25px;
-    max-width: 100%;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
 }
 
-.pricing-header {
-    color: #888;
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 360px;
+    font-family: Inter, sans-serif;
+}
+
+.desc h2 {
+    font-weight: 700;
+}
+
+.desc p {
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.desc .submit {
+    margin-left: auto;
+    justify-content: center;
+}
+
+.logo-img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.product-header {
+    color: rgb(26, 26, 26);
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.pricing-features {
-    margin:50px 0 25px;
-    color: #016ff9;
+.product-features {
+    /* margin:25px 0 25px; */
+    color: #1d1d1d
 }
 
-.pricing-features-item {
+.product-features-item {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 1.5;
     padding: 15px 0;
-    border-top: 1px solid #e1f1ff;
+    /* border-top: 1px solid #e1f1ff; */
 }
 
-.pricing-features-item:last-child {
-    border-bottom: 1px solid #e1f1ff;
-}
 
-.pricing-price {
-    color: #016ff9;
-    display: block;
-    font-size: 32px;
-    font-weight: 700;
-}
 
-.pricing-button {
-    border: 1px solid #9dd1ff;
-    border-radius: 10px;
-    color: #348efe;
-    display: inline-block;
-    padding: 15px 35px;
-    text-decoration: none;
-    margin: 25px 0;
-    transition: background-color 0.125s ease-in-out;
-}
-
-.pricing-button:hover, .pricing-button:focus {
-    background-color: #e1f1ff;
-}
-
-.pricing-button.is-featured {
-    background-color: #48aaff;
-    color: white;
-}
-
-.pricing-button.is-featured:hover, .pricing-button.is-featured:focus  {
-    background-color: #269aff;
-    color: white;
+#logo-lg {
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
 }
 
 @media (min-width: 900px){
@@ -107,5 +114,101 @@ ul {
     }
     .pricing-plan:last-child {
         border-right: none;
+    }
+}
+
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    padding-left: 24px;
+}
+
+.sign {
+    padding-top: 40px;
+    color: #5795FF;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 40;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+}
+
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #4585F3,#5795FF);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 35%;
+    font-size: 13px;
+}
+
+.forgot {
+    color: #474747;
+    padding-top: 15px;
+}
+
+a {
+  
+    color: #3c79d3; 
+    text-decoration: none
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
     }
 }
