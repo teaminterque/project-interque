@@ -13,6 +13,29 @@
   a {
     text-decoration: none;
   }
+
+  section {
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* flex: 3fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    background-color: white;
+    /* padding: 15px 25px;
+    width: 100%; */
+    max-width: 960px;
+    display: flex;
+}
   
   /* .pagenav {
     width: 100%;
