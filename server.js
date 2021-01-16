@@ -15,7 +15,7 @@ let sessions = {};
 app.use(express.static("views"));
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "../views/landing.html");
+  response.sendFile(__dirname + "/views/landing.html");
 });
 
 

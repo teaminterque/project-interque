@@ -16,16 +16,16 @@
   <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
   <script src="/public/client.js"></script>
   <script>
-  fetch('/token').then(res => res.json()).then(({apiKey, sessionId, token}) => {
-    const session = OT.initSession(apiKey, sessionId)
-    const publisher = OT.initPublisher('publishers')
-    session.connect(token, () => {
-      session.publish(publisher)
+    fetch('/token').then(res => res.json()).then(({apiKey, sessionId, token}) => {
+      const session = OT.initSession(apiKey, sessionId)
+      const publisher = OT.initPublisher('publishers')
+      session.connect(token, () => {
+        session.publish(publisher)
+      })
+      session.on('streamCreated', event => {
+        session.subscribe(event.stream, 'subscribers')
+      })
     })
-    session.on('streamCreated', event => {
-      session.subscribe(event.stream, 'subscribers')
-    })
-  })
   </script>
 </body>
 </html>
