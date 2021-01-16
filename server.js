@@ -9,7 +9,6 @@ const OpenTok = require("opentok");
 const OT = new OpenTok(process.env.API_KEY, process.env.API_SECRET);
 
 
-
 let sessions = {};
 
 app.use(express.static("views"));
