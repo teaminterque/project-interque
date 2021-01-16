@@ -1,31 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+
+<html>
+
 <head>
+  <title>Interque</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>interque</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../public/main.css" />
   <link rel="stylesheet" href="../public/style.css">
   <link rel="stylesheet" href="/assets/logo/icon@2x.png">
 </head>
-<body>
-  <main>
-    <div id="subscriber" class="subscriber"></div>
-    <div id="publisher" class="publisher"></div>
-  </main>
-  <h1>Welcome to Interque!</h1>
-  <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
-  <script src="/public/client.js"></script>
-  <script>
-  fetch('/token').then(res => res.json()).then(({apiKey, sessionId, token}) => {
-    const session = OT.initSession(apiKey, sessionId)
-    const publisher = OT.initPublisher('publishers')
-    session.connect(token, () => {
-      session.publish(publisher)
-    })
-    session.on('streamCreated', event => {
-      session.subscribe(event.stream, 'subscribers')
-    })
-  })
-  </script>
+
+<body class="is-preload">
+  <div id="wrapper">
+
+    <div id="main">
+      <div class="inner">
+
+        <header id="header">
+          <a href="index.html" class="logo"><strong>Interque</strong></a>
+
+        </header>
+
+        <section id="banner">
+          <div class="content">
+            <header>
+              <h1>Hiring/Jobsearch process reimagined</h1>
+              <p>Live interview with recruiters/applicants all across the world</p>
+            </header>
+            <p>Interque is a video confrencing application tool that changes the way see recruiting. Random applicants
+              and recruiters are matched up in an impromptu interview.</p>
+
+          </div>
+          <span class="image object">
+            <img src="../images/pic10.jpg" alt="" />
+          </span>
+        </section>
+
+
+        <main>
+          <div id="subscriber" class="subscriber"></div>
+          <div id="publisher" class="publisher"></div>
+        </main>
+        <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+        <script src="/public/client.js"></script>
+        <script>
+          fetch('/token').then(res => res.json()).then(({ apiKey, sessionId, token }) => {
+            const session = OT.initSession(apiKey, sessionId)
+            const publisher = OT.initPublisher('publishers')
+            session.connect(token, () => {
+              session.publish(publisher)
+            })
+            session.on('streamCreated', event => {
+              session.subscribe(event.stream, 'subscribers')
+            })
+          })
+        </script>
+
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div class="inner">
+
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+
+        <nav id="menu">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+
+
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../assets/jquery.min.js"></script>
+  <script src="../assets/browser.min.js"></script>
+  <script src="../assets/breakpoints.min.js"></script>
+  <script src="../assets/util.js"></script>
+  <script src="../assets/main.js"></script>
+
 </body>
+
 </html>
