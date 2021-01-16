@@ -19,7 +19,7 @@
 }
   
   a {
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   section {
@@ -45,9 +45,9 @@
     display: flex;
 }
   
-ul {
+/* ul {
   list-style-type: none;
-}
+} */
 
 .panel {
   background-color: white;
