@@ -9,9 +9,13 @@ let sessions = {};
 
 app.use(express.static("public"));
 
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "../views/landing.html");
-});
+// app.get("/", (request, response) => {
+//   response.sendFile(__dirname + "/views/landing.html");
+// });
+
+app.get('/', (req, res) => {
+    res.sendFile('views/landing.html', {root: __dirname })
+})
 
 
 app.get("/session/:room", (request, response) => {
