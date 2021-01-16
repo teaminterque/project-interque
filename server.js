@@ -9,12 +9,8 @@ let sessions = {};
 
 app.use(express.static("public"));
 
-// app.get("/", (request, response) => {
-//   response.sendFile(__dirname + "/views/landing.html");
-// });
-
-app.get('/', function(req, res){
-    res.sendfile('landing.html', { root: __dirname + "/views" } );
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/landing.html");
 });
 
 
