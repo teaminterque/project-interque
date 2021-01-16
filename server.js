@@ -2,12 +2,17 @@ require('dotenv').config();
 
 const express = require("express");
 const app = express();
+const listener = app.listen(process.env.PORT, () => {
+  console.log("Your app is listening on port " + listener.address().port);
+});
 const OpenTok = require("opentok");
 const OT = new OpenTok(process.env.API_KEY, process.env.API_SECRET);
 
+
+
 let sessions = {};
 
-app.use(express.static("public"));
+app.use(express.static("views"));
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "../views/landing.html");
@@ -59,7 +64,3 @@ function generateToken(roomName, response) {
     apiKey: process.env.API_KEY
   });
 }
-
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
