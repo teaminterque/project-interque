@@ -19,7 +19,5 @@ app.get('/token', (req, res) => {
   })
 })
 
-app.listen(5500)
-
 
 
