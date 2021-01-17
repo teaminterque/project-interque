@@ -31,6 +31,7 @@ sendButton.addEventListener('click', (e) => {
 database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   msgs.push([snapshot.val()])
 
+  alert(snapshot.val())
   chatsList.appendChild(makeUL(msgs));
 
 })
