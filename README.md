@@ -9,7 +9,7 @@
 - Vonage Video API (Video calling)
 - Firebase (Real-Time Messaging)
 
-##View Demo:
+##View Live Project:
 (https://interque.netlify.app/)
 
 ## Contributors:
