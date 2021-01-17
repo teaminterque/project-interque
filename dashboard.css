@@ -17,6 +17,10 @@
 
   section {
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
   
   a {
@@ -73,9 +77,6 @@
     margin-bottom: 48px;
   }
   
-  /* .sidenav a {
-    color: #7a9de7;
-  } */
   
   .sidenav .sidenav-button .sidenav-button-text {
     font-weight: 700;
@@ -101,3 +102,21 @@
   a:focus {
     color: #4585f3;
   }
+
+
+
+  .video-feed {
+    border: 1px solid #121212;
+    border-radius: 5%;
+  }
+
+  .chatbox {
+    border: 1px solid #121212;
+    border-radius: 5%;
+    height: 500px;
+    width: 300px;
+    margin-left: 24px;
+  }
+
+  
+
