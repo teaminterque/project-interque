@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* vertical-align: baseline;
+    background: transparent; */
+  }
+
+  body {
+    background-color: #4585f3;
+    background-image: linear-gradient(160deg, #4585f3 0%, #7aaaf5 50%, #ffffff 100%);
+  }
+
+  section {
+    height: 100vh;
+}
+  
+  a {
+    text-decoration: none;
+  }
+
+
+  
+  .pagenav {
+    width: 100%;
+    height: 74px;
+    float: left;
+    
+  }
+  
+  .sidenav {
+      height: 100%;
+      width: 160px; 
+      position: fixed; 
+      z-index: 1;
+      top: 0; 
+      left: 0;
+      background-color:#ffffff; 
+      overflow-x: hidden; 
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+    }
+
+  .sidenav .logo, .logo .logo-img {
+    max-width: 60px;
+  }
+
+  .sidenav .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidenav .logo-img {
+    padding-bottom: 36px;
+  }
+  
+  
+  .sidenav-button:nth-of-type(1) {
+  
+    margin-top: 96px;
+  
+  }
+  
+  .sidenav-button {
+    margin-bottom: 48px;
+  }
+  
+  /* .sidenav a {
+    color: #7a9de7;
+  } */
+  
+  .sidenav .sidenav-button .sidenav-button-text {
+    font-weight: 700;
+    font-size: 1.4em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding-bottom: 24px;
+  }
+
+  a {
+   color: #121212;
+  }
+
+  a:hover {
+    color: #7cacff;
+  }
+
+  a:focus {
+    color: #4585f3;
+  }
