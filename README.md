@@ -1,1 +1,1 @@
-# Welcome to Interque ![GitHub Logo](C:\Users\hd009\Desktop\project-interque\assets\logos)
+# Welcome to Interque ![Interque Logo](https://interque.netlify.app/assets/logos/logo-full-dark.png)
