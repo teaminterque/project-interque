@@ -10,10 +10,10 @@
 - Firebase (Real-Time Messaging)
 
 ## View Live Project:
-![Live Demo](https://interque.netlify.app/)
+[Live Demo](https://interque.netlify.app/)
 
 ## Contributors:
-- Pratik Solanki: https://github.com/pratikksolanki, https://www.linkedin.com/in/pratikksolanki/, https://www.pratiksolanki.com/
-- Harsh Dave: https://github.com/hdave009, https://www.linkedin.com/in/h7dave/
-- Vraj Patel: https://github.com/ChocoMufn
-- Reyansh Patange: https://github.com/Reyansh14, 
+- Pratik Solanki: [GitHub](https://github.com/pratikksolanki), [LinkedIn](https://www.linkedin.com/in/pratikksolanki/), [pratiksolanki.com](https://www.pratiksolanki.com/)
+- Harsh Dave: [GitHub](https://github.com/hdave009), [LinkedIn](https://www.linkedin.com/in/h7dave/)
+- Vraj Patel: [GitHub](https://github.com/ChocoMufn), [LinkedIn](https://www.linkedin.com/in/vraj-p-b46040134/)
+- Reyansh Patange: [GitHub](https://github.com/Reyansh14), [LinkedIn](https://www.linkedin.com/in/reyanshpatange/)
