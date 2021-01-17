@@ -123,19 +123,28 @@
 
   #nameEntry, #textEntry {
     border: 1px solid rgb(230, 30, 30);
+    padding: 4px;
+    margin: 4px 8px;
   }
 
   #sendButton {
     color: #ffffff;
     background-color: #4585f3;
     padding: 6px;
-    margin: 2px;
+    margin: 4px 8px;
     border-radius: 4px;
   }
 
-  .list ul {
+  /* .list ul {
     list-style: decimal;
+  } */
+
+  .chatslist ul {
+    list-style: none;
+    padding-left: 8px;
   }
+
+  
 
   
 
