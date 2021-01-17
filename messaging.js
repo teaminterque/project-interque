@@ -35,7 +35,8 @@ database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   var item = document.createElement('li');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(snapshot.key + ": " + snapshot.val()));
+  var name = snapshot.key.replace(/[0-9]/g, '');
+  item.appendChild(document.createTextNode(name + ": " + snapshot.val()));
   
   // Add it to the list:
   var list = document.createElement('ul')
@@ -44,6 +45,8 @@ database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   chatsList.appendChild(list);
 
 })
+
+
 
 // function makeUL(array) {
 //     // Create the list element:
