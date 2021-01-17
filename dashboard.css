@@ -103,11 +103,17 @@
     color: #4585f3;
   }
 
-
+  .box {
+    width: 510px;
+    height: 510px;
+    background-color: #121212;
+  }
 
   .video-feed {
     border: 1px solid #121212;
     border-radius: 5%;
+    height: 510px;
+    width: 510px;
   }
 
   .chatbox {
