@@ -4,7 +4,10 @@ html {
 }
 
 body {
-    background-color: #60a9ff;
+    /* background-color: #ffffff; */
+    background-color: #4585f3;
+    background-image: linear-gradient(160deg, #4585f3 0%, #7aaaf5 50%, #ffffff 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +15,13 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .panel {
@@ -23,8 +33,11 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    z-index: -1;
     /* text-align: center; */
     /* text-transform: uppercase; */
+    max-height: 750px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .box {
