@@ -35,7 +35,7 @@ database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   var item = document.createElement('li');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(snapshot.val()));
+  item.appendChild(document.createTextNode(snapshot.key + ": " + snapshot.val()));
   
   // Add it to the list:
   var list = document.createElement('ul')
