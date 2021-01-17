@@ -4,7 +4,10 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #4585f3;
+    background-image: linear-gradient(160deg, #4585f3 0%, #7aaaf5 50%, #ffffff 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
