@@ -45,9 +45,14 @@
 
                 <div class="box">
                     <div class="chatbox">
-                        <input type="text" id="nameEntry" placeholder="Enter Name"/>
-                        <input type="text" id="textEntry" placeholder="Message"/>
-                        <button id="sendButton">Send</button>
+                        <div class="chatbox-controls">
+                            <input type="text" id="nameEntry" placeholder="Enter Name"/>
+                            <input type="text" id="textEntry" placeholder="Message"/>
+                            <span>
+                                <button id="sendButton">Send</button>
+                                <button id="endButton" onclick="window.location.reload()">End Interview</button>
+                            </span>
+                        </div>
                         <div class="list">
                             <ul id="chatsList">
                             </ul>
