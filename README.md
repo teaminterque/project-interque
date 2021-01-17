@@ -2,7 +2,7 @@
 
 
 ## View our Video Demo:
-(https://www.youtube.com/watch?v=GK9wb0fG5NU&feature=youtu.be)
+[Video Demo](https://www.youtube.com/watch?v=GK9wb0fG5NU&feature=youtu.be)
 
 ## Built Using the Following Technologies:
 - HTML, CSS, JavaScript
