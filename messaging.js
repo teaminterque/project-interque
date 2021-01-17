@@ -50,7 +50,7 @@ endButton.addEventListener('click', (e) => {
   e.preventDefault();
   database.ref('/messages/').remove();
   database.ref('/Count').set(0);
-  location.reload();
+  window.location.href = "https://interque.netlify.app/settings.html"
 })
 
 
