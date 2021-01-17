@@ -31,29 +31,38 @@ sendButton.addEventListener('click', (e) => {
 database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   msgs.push([snapshot.val()])
 
-  alert(snapshot.val())
-  chatsList.appendChild(makeUL(msgs));
+  // Create the list item:
+  var item = document.createElement('li');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(snapshot.val()));
+  
+  // Add it to the list:
+  var list = document.createElement('ul')
+  list.appendChild(item);
+
+  chatsList.appendChild(list);
 
 })
 
-function makeUL(array) {
-    // Create the list element:
-    var list = document.createElement('ul');
+// function makeUL(array) {
+//     // Create the list element:
+//     var list = document.createElement('ul');
 
-    for (var i = 0; i < array.length; i++) {
-        // Create the list item:
-        var item = document.createElement('li');
+//     for (var i = 0; i < array.length; i++) {
+//         // Create the list item:
+//         var item = document.createElement('li');
 
-        // Set its contents:
-        item.appendChild(document.createTextNode(array[i]));
+//         // Set its contents:
+//         item.appendChild(document.createTextNode(array[i]));
 
-        // Add it to the list:
-        list.appendChild(item); 
-    }
+//         // Add it to the list:
+//         list.appendChild(item); 
+//     }
 
-    // Finally, return the constructed list:
-    return list;
-}
+//     // Finally, return the constructed list:
+//     return list;
+// }
 
 function snapshotToArray(snapshot) {
   var returnArr = [];
