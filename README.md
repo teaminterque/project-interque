@@ -8,3 +8,6 @@
 - HTML, CSS, JavaScript
 - Vonage Video API
 - Firebase (Real-Time Messaging)
+
+## Contributors:
+Harsh Dave, Pratik Solanki, Vraj Patel & Reyansh Patange
