@@ -1,0 +1,251 @@
+html {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #ffffff; */
+    background-color: #4585f3;
+    background-image: linear-gradient(160deg, #4585f3 0%, #7aaaf5 50%, #ffffff 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    /* width: 100%; */
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: -1;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
+    max-height: 750px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.box {
+    /* border-bottom: 1px solid #206eb3; */
+    /* border-bottom: 1px solid #e1f1ff; */
+    max-width: 510px;
+    padding: 8px 16px;
+}
+
+.box:last-child {
+    border-bottom: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 360px;
+    font-family: Inter, sans-serif;
+}
+
+.desc h2 {
+    font-weight: 700;
+}
+
+.desc p {
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.desc .submit {
+    margin-left: auto;
+    justify-content: center;
+}
+
+.logo-img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.product-header {
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+.product-features {
+    /* margin:25px 0 25px; */
+    color: #1d1d1d
+}
+
+.product-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 8px 0;
+    /* border-top: 1px solid #e1f1ff; */
+}
+
+.product-features-item:nth-of-type(2) {
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 24px;
+}
+
+.note p:nth-of-type(2) {
+    font-size: 0.9em;
+}
+
+
+
+#logo-lg {
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+}
+
+@media (min-width: 900px){
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        /* border-right: 1px solid #e1f1ff; */
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
+
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    padding-left: 24px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.sign {
+    padding-top: 40px;
+    color: #5795FF;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 40;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+}
+
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #4585F3,#5795FF);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 35%;
+    font-size: 13px;
+}
+
+.forgot {
+    color: #474747;
+    padding-top: 15px;
+}
+
+a {
+  
+    color: #3c79d3; 
+    text-decoration: none
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
+.desc p {
+    font-weight: 500;
+
+}
