@@ -1,4 +1,5 @@
 const sendButton = document.getElementById("sendButton");
+const endButton = document.getElementById("endButton");
 const textEntry = document.getElementById("textEntry");
 const nameEntry = document.getElementById("nameEntry");
 const chatsList = document.getElementById("chatsList");
@@ -43,10 +44,13 @@ database.ref('/messages/').on('child_added', (snapshot, prevChildKey) => {
   list.appendChild(item);
 
   chatsList.appendChild(list);
-
 })
 
-
+endButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  database.ref('/messages/').remove();
+  database.ref('/Count').set(0);
+})
 
 // function makeUL(array) {
 //     // Create the list element:
