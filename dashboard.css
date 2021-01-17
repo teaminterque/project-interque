@@ -141,7 +141,11 @@
 
   .chatslist ul {
     list-style: none;
-    padding-left: 8px;
+    margin-left: 8px;
+  }
+
+  .chatslist ul li{
+    margin-left: 8px;
   }
 
   
