@@ -6,8 +6,11 @@
 
 ##Built Using the Following Technologies:
 - HTML, CSS, JavaScript
-- Vonage Video API
+- Vonage Video API (Video calling)
 - Firebase (Real-Time Messaging)
 
 ## Contributors:
-Harsh Dave, Pratik Solanki, Vraj Patel & Reyansh Patange
+- Pratik Solanki: https://github.com/pratikksolanki
+- Harsh Dave: https://github.com/hdave009
+- Vraj Patel: https://github.com/ChocoMufn
+- Reyansh Patange: https://github.com/Reyansh14
