@@ -13,7 +13,7 @@
 [Live Demo](https://interque.netlify.app/)
 
 ## Contributors:
-- Pratik Solanki: [GitHub](https://github.com/pratikksolanki), [LinkedIn](https://www.linkedin.com/in/pratikksolanki/), [pratiksolanki.com](https://www.pratiksolanki.com/)
+- Pratik Solanki: [GitHub](https://github.com/pratikksolanki), [LinkedIn](https://www.linkedin.com/in/pratikksolanki/)
 - Harsh Dave: [GitHub](https://github.com/hdave009), [LinkedIn](https://www.linkedin.com/in/h7dave/)
 - Vraj Patel: [GitHub](https://github.com/ChocoMufn), [LinkedIn](https://www.linkedin.com/in/vraj-p-b46040134/)
 - Reyansh Patange: [GitHub](https://github.com/Reyansh14), [LinkedIn](https://www.linkedin.com/in/reyanshpatange/)
